@@ -1,0 +1,30 @@
+net: "code/net_code/mobileface_model_AM.prototxt"
+#test_iter: 100 
+#test_interval: 2000
+
+base_lr: 0.001
+lr_policy: "multistep"
+gamma: 0.1
+
+#stepvalue: 160000
+#stepvalue: 300000
+#stepvalue: 400000
+#max_iter: 440000
+#iter_size: 2
+
+stepvalue: 32000
+stepvalue: 48000
+stepvalue: 56000
+#max_iter: 60000
+max_iter: 1
+iter_size: 10
+
+display: 10
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 5000
+#snapshot_prefix: "result/sphereface_model"
+snapshot_prefix: "result/sphereface_40_model/mobileface/mobileface_112x112_web_model"
+#debug_info: true
+
+solver_mode: GPU
