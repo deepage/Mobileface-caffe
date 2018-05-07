@@ -15,8 +15,7 @@ gamma: 0.1
 stepvalue: 32000
 stepvalue: 48000
 stepvalue: 56000
-#max_iter: 60000
-max_iter: 1
+max_iter: 60000
 iter_size: 10
 
 display: 10
