@@ -4,6 +4,8 @@
 
 对于训练的一点说明，因为我只有单卡1060，所以batch_size设的比较小，采用在solver中加入iter_size来达到batch_size512的目的，先使用softmax训差不多1W次，然后再换AM接着训练，这样可以收敛的快一些，月生大佬论文中说的是迭代max_size为6W次，我在用AM训的时候发现5W和5W5收敛结果更好，所以选择这个结果上传，应该是AM和arc有区别导致。
 
+模型大小说明：上传的模型包含分类的全连接层，去掉之后大小为4M。
+
 
 
 paper:[MobileFaceNets: Efficient CNNs for Accurate Real-time Face Verification on Mobile Devices](https://arxiv.org/abs/1804.07573)
